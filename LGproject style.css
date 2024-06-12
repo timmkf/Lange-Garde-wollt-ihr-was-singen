@@ -1,0 +1,360 @@
+body                {
+                    margin: 0;
+                    padding: 0;}
+
+.backgroundimg      {background-image: url(HintergrundWand.JPEG);
+                    background-size: cover;
+                    background-position: center;
+                    margin:0;
+                    padding: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 0;
+                }
+
+
+
+
+
+.jukebox            {background-image: url(emptyJukebox.PNG);
+                    background-size: cover;
+                    background-position: center;
+                    margin:0;
+                    padding: 0;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: calc(95vw); /* 80% der Bildschirmbreite */
+                    height: calc(80vw * 16 / 8.6); /* Höhe im Verhältnis 9:16 */
+                    max-width: 430px; /* Maximale Breite von 350px */
+                    max-height: 657px; /* Maximale Höhe von 657px */
+                    z-index: 1;
+                    /*border: 5px solid white ;*/
+                    }
+
+
+@font-face         {font-family: 'Pixelschritart';
+                    src: url("PressStart2P.woff") format('woff'), /* WOFF Format */}
+
+
+.score              {  font-family: 'Pixelschritart';
+                    color: white;
+                    position: absolute;
+                    font-size: 2vh;
+                    display: flex;
+                    /*border: 5px solid ;*/
+                    margin-top: 3vh;
+                    margin-left: 2vh;
+                    padding: 0%;}
+
+.score p            {display: inline-block ;
+                    padding: 0;
+                    margin: 0;
+                    font-size: 2.5vh;}
+
+.health             {width: auto;
+                    height: auto;
+                    /*border: 5px solid white ;*/
+                    display: flex;
+                    position: absolute;
+                    right: 0;
+                    margin-top: 3vh;
+                    margin-right: 2vh;}
+
+#health1, #health2, #health3    {height: 5vh;
+                                width: 5.2vh;
+                                /*border: 5px solid green ;*/
+                                margin:0;
+                                margin-left: 1vh;
+                                padding: 0;
+                                background-image: url(heart.PNG);
+                                background-size: cover;
+                                background-position: center;}
+
+#helpButton         {width: 7vh;
+                    height: 7vh;
+                    /*border: 5px solid white ;*/
+                    border: 0;
+                    display: flex;
+                    position: absolute;
+                    margin-top: 7.5vh ;
+                    margin-left: 2vh;
+                    background-color: rgb(17, 64, 80);
+                    background-image: url(help.PNG);
+                    background-size: cover;
+                    background-position: center;
+                    z-index: 4;}
+
+#help, #SpickerDiv  {width: 7vh;
+                    height: 7vh;
+                    border: 5px solid black ;
+                    border-radius: 1.5vh;
+                    visibility: hidden;/*auf visilbil ändern*/
+                    display: flex;
+                    flex-direction: column; /* Elemente vertikal anordnen */
+                    align-items: center; /* Elemente horizontal zentrieren */
+                    position: absolute;
+                    margin:0;
+                    padding: 0;
+                    transform: translate(-50%, -50%) scale(0.1);
+                    width: calc(80vw); /* 80% der Bildschirmbreite */
+                    height: calc(80vw * 16 / 8.6); /* Höhe im Verhältnis 9:16 */
+                    max-width: 430px; /* Maximale Breite von 350px */
+                    max-height: 657px;
+                    background-color: rgba(17, 64, 80, 0.92) ;
+                    color:white;
+                    font-family: 'Pixelschritart';
+                    src: url("PressStart2P.woff") format('woff'), /* WOFF Format */;   
+                    font-size: 1.8vh;
+                    overflow-y: scroll; /*scrollen*/
+                    line-height: 1.2;
+                    z-index: 4;
+                    transition: transform 0.4s, top 0.4s, left 0.4s; 
+                    }               
+
+#SpickerDiv         {top: 85%;
+                    left: 72.5%;
+                    z-index: 3;}
+
+#SpickerHead        {margin: 1vh auto;
+                    font-size: 2.7vh;
+                    color: rgb(238, 201, 9)}
+
+#SpickerText        {margin: 1vh 1vh;
+                    line-height: 1.4;}
+
+#help               {top: 15%;
+                    left: 15%;
+                    }
+
+#help p             {margin: 1.5vh 1.5vh;}
+
+#Anleitung          {font-size: 2.7vh;
+                    color: rgb(238, 201, 9);
+                    margin: 1vh auto;
+                    }
+
+#helpYellow         {color: rgb(238, 201, 9);}
+
+#xButton, #x2Button {height: 5vh;
+                    width:  5vh;
+                    /*border: 5px solid green;*/
+                    border: 0;
+                    display: flex;
+                    position: absolute;
+                    /*border-radius: 1.2vh;*/
+                    background-color: rgb(17, 64, 80);
+                    right:0;
+                    top:0;
+                    background-image: url(xButton.PNG);
+                    background-size: cover;
+                    background-position: center;}
+
+
+.screen             {width: auto;
+                    height: 15.4%;
+                    /*border: 5px solid green;*/
+                    margin-top: 30%;
+                    margin-left: 4%;
+                    margin-right: 4%;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center; /* Horizontales Zentrieren */
+                    align-items: center;
+                    text-align: center;}
+
+#textScreen         {font-family: 'Pixelschritart';
+                    src: url("PressStart2P.woff") format('woff'), /* WOFF Format */;
+                    font-weight: 600;
+                    font-size: 2.5vh;
+                    line-height: 1.2;        /* Zeilenabstand auf das 1.5-fache der Schriftgröße setzen */;
+                    }
+
+
+#modeContainer      {
+                    justify-content: center; /* Horizontales Zentrieren */
+                    align-items: center;
+                    text-align: center;
+                    margin-top: 1.5%; 
+                    height: 5%;
+                    }
+
+#mode1, #mode2, #modeText   {display: inline;
+                            visibility: hidden;}
+
+#modeText           {font-family: 'Pixelschritart';
+                    font-size: 2vh;
+                    color: white;
+                    }
+
+#mode1              {height: 3.5vh;
+                    width: 3.5vh;
+                    margin-right: 2vh;
+                    border-radius: 0.5vh;
+                    border: 0;
+                    background-image: url(Mode1.PNG);
+                    background-size: cover;
+                    background-position: center;}
+
+#mode2              {height: 3.5vh;
+                    width: 3.5vh;
+                    margin-left: 2vh;
+                    border-radius: 0.5vh;
+                    border: 0;
+                    background-image: url(Mode2.PNG);
+                    background-size: cover;
+                    background-position: center;}
+
+
+#middleBox          {height: calc(2.4vh * 6.6);
+                    width: calc(2.4vh * 11.1);
+                    /*border: 5px solid green;*/
+                    margin: 5% auto;
+                    background-image: url(MiddleboxStop.PNG);
+                    background-size: cover;
+                    background-position: center;
+                    padding: 0;}
+
+#animationBox       {height: calc(2.4vh * 6.6);
+                    width: calc(2.4vh * 11.1);
+                    pointer-events: none;
+                    }
+
+
+
+
+.leftButton         {width: 17vh;
+                    height: 8vh;
+                    border-radius: 1.5vh;
+                    display: flex;
+                    position: absolute;
+                    bottom:0;
+                    margin-bottom: 8vh ;
+                    margin-left: 4vh;
+                    background-image: url(emptyButton.PNG);
+                    background-size: cover;
+                    background-position: center;
+                    z-index: 2;
+                    
+                    justify-content: center; /* Horizontales Zentrieren */
+                    align-items: center;
+                    text-align: center;}
+
+.rightButton        {width: 17vh;
+                    height: 8vh;
+                    border-radius: 1.5vh;
+                    display: flex;
+                    position: absolute;
+                    bottom:0;
+                    right:0;
+                    margin-bottom: 8vh ;
+                    margin-right: 4vh;
+                    background-image: url(emptyButton.PNG);
+                    background-size: cover;
+                    background-position: center;
+                    z-index: 2;
+                
+                    justify-content: center; /* Horizontales Zentrieren */
+                    align-items: center;
+                    text-align: center;}
+
+#leftButtonText, #rightButtonText   {font-family: 'Pixelschritart';
+                            src: url("PressStart2P.woff") format('woff'), /* WOFF Format */;
+                            font-weight: 600;
+                            font-size: 2vh;
+                            color: rgb(17, 64, 80);}
+
+#loseDiv, #anmeldungContainer           {width: 7vh;
+                    height: 7vh;
+                    border: 5px solid black ;
+                    border-radius: 1.5vh;
+                    visibility: hidden;/*auf visible ändern*/
+                    display: flex;
+                    position: absolute;
+                    margin:0;
+                    padding: 0;
+                    position: absolute;
+                    top: 55%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) scale(0.1);
+                    width: calc(80vw); /* 80% der Bildschirmbreite */
+                    height: 50vh; /* Höhe im Verhältnis 9:16 */
+                    max-width: 430px; /* Maximale Breite von 350px */
+                    max-height: 657px;
+                    background-color: rgba(17, 64, 80, 0.92) ;
+                    color:white;
+                    font-family: 'Pixelschritart';
+                    src: url("PressStart2P.woff") format('woff'), /* WOFF Format */;   
+                    font-size: 1.8vh;
+                    overflow-y: scroll; /*scrollen*/
+                    line-height: 1.2;
+                    z-index: 4;
+                    flex-direction: column; /* Elemente vertikal anordnen */ ;
+                    align-items: center; /* Optional: Elemente horizontal zentrieren */
+                    transition: transform 0.4s; 
+                    }
+                    
+#anmeldungContainer {visibility: visible;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: unset;
+                    height: auto;
+                    }  
+                    
+#anmeldung          {border: 0;}
+
+#username{display: block;}
+
+#terms-cons         {margin-top: 2vh;
+                    height: 2.5vh;
+                    width: 2.5vh;
+                    }
+
+#tcText             {font-size: 1vh;
+                    display: flex;
+                    }
+
+
+#anmeldungContainer button  {width: 17vh;
+                            height: 8vh;
+                            border-radius: 1.5vh;
+                            background-image: url(emptyButton.PNG);
+                            background-size: cover;
+                            background-position: center;
+                            font-family: 'Pixelschritart';
+                            src: url("PressStart2P.woff") format('woff'), /* WOFF Format */;
+                            font-weight: 600;
+                            font-size: 2vh;
+                            color: rgb(17, 64, 80);
+                            margin-bottom: 2vh;} 
+
+#loseScore          {font-size: 8vh;
+                    margin-top: 1vh;
+                    margin-bottom: 2vh;}
+
+#loseText1          {text-align: center;
+                    margin-bottom: 4vh;}
+
+#loseText2          {text-align: center;
+                    margin-bottom: 0;}
+
+#tryAgain           {width: 13.6vh;
+                    height: 6.4vh;
+                    border-radius: 1.2vh;
+                    margin-top: 3vh;
+                    margin-bottom: 3vh;
+                    background-image: url(emptyButton.PNG);
+                    background-size: cover;
+                    background-position: center;
+                    z-index: 4;
+                    justify-content: center; /* Horizontales Zentrieren */
+                    align-items: center;
+                    text-align: center;}
+
+#tryAgainText       {font-family: 'Pixelschritart';
+                    src: url("PressStart2P.woff") format('woff'), /* WOFF Format */;
+                    font-weight: 480;
+                    font-size: 1.6vh;
+                    color: rgb(17, 64, 80);}
