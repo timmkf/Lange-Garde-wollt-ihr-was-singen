@@ -1,0 +1,10 @@
+{
+    "name": "Lange Garde wollt ihr was singen.",
+    "short_name": "LG singen.",
+    "theme_color": "#114050",
+    "background_color": "#114050",
+    "display": "browser",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+  }
