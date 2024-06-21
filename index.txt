@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="LGproject style.css">
+    <title>Lange Garde wollt ihr was singen?</title>
+  </head>
+  <body>
+    <div class="backgroundimg">
+      <div class="score"><p>Score:</p><p id="score">0</p></div>
+      <div class="health">
+        <span id="health1"></span>
+        <span id="health2"></span>
+        <span id="health3"></span>
+      </div>
+
+
+      <!--<form id="AnmeldeDaten" method="post">!--> <!--action="..." innen drin wo das formular hingeschickt werden soll-->
+          <div id="anmeldungContainer">
+            <h1>Anmeldung</h1>
+            <fieldset id="anmeldung">
+              <label for="username"><p>Username:</p><input type="text" id="username" required></label>
+              <label for="terms-cons"><input type="checkbox" id="terms-cons" required></label>
+              <p id="tcText">Ich akzeptiere das die Funken scheiße sind.</p>
+            </fieldset>
+            <button id="StartButton" type="submit">Get started!</button>
+          </div>
+      </form>
+
+      <button id="helpButton"></button>
+      <div id="help">
+        <button id="xButton"></button>
+        <p id="Anleitung">Anleitung</p>
+        <p>Diese Website ist für alle <a id="helpYellow">Langgardisten</a>, die ihre Liederkenntnisse auffrischen und trainieren wollen. 
+        <p>Im Folgenden findest du eine Erklärung, wie die Website richtig zu bedienen ist.</p>
+        <p>Drücke auf <a id="helpYellow">„Play“</a>, um zu starten.</p>
+        <p> Als Nächstes wird dir eine <a id="helpYellow">zufällig ausgewählte Liedstrophe</a> angezeigt. Dieses Lied befindet sich auch im aktuellen Liederbuch.</p>
+        <p>Für das <a id="helpYellow">optimale Trainingsergebnis singe</a> nun diese Strophe <a id="helpYellow">laut</a> vor dich hin. Zur Not reicht es auch aus, wenn du es in Gedanken durchgehst.</p>
+        <p>Wenn du dir sicher bist, dass du keinen Fehler gemacht hast, drücke auf <a id="helpYellow">„Next“</a> und dein Score erhöht sich.</p>
+        <p>Solltest du dir jedoch unsicher sein, drücke auf <a id="helpYellow">„Spicker“</a>. Die entsprechende Strophe erscheint, du verlierst ein halbes Leben und der Score bleibt gleich.</p>
+        <p>Das <a id="helpYellow">Ziel</a> ist es, so viele Strophen wie möglich auswendig zu wissen und so viele Punkte wie möglich zu sammeln. </p>
+        <p>Trainiere hart, um irgendwann gegen den <a id="helpYellow">Endboss</a> antreten zu dürfen.</p>
+        <p>Bei Fragen oder Feedback wende dich einfach an Tim Markgraf.</p>
+        <p><a id="helpYellow">Viel Spaß!</a></p>
+      </div>
+      <div id="SpickerDiv">
+        <button id="x2Button"></button>
+        <p id="SpickerHead">Spicker</p>
+        <p id="SpickerText">dfsdsfafasfdasf</p>
+        
+      </div>
+      <div id="loseDiv">
+        <p id="loseScore">0</p>
+        <p id="loseText1">Ende</p>
+        <p id="loseText2">Ende</p>
+        <button id="tryAgain"><span id="tryAgainText">Try again</span></button>
+      </div>
+      <div class="jukebox">
+        <div class="screen">
+          <span id="textScreen">Lange Garde wollt ihr was singen?</span>
+        </div>
+        <div id="modeContainer">
+          <button id="mode1"></button>
+          <p id="modeText">Mode</p>
+          <button id="mode2"></button>
+        </div>
+        <div id="middleBox">
+          <video id="animationBox" src="AnimationShort.MP4" playsinline></video>
+        </div>
+      </div>
+      <div class="interact">
+        <button class="leftButton" id="leftButton"><span id="leftButtonText">Play</span></button>
+        <button class="rightButton" id="rightButton"><span id="rightButtonText">Spicker</span></button>
+      </div>
+    </div>
+    <script src="LGproject script.js"></script>
+  </body>
+</html>
