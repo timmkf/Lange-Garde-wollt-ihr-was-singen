@@ -347,13 +347,14 @@ body                {
 #loseText2          {text-align: center;
                     margin-bottom: 0;}
 
-#tryAgain           {width: 13.6vh;
-                    height: 6.4vh;
-                    border-radius: 1.2vh;
+#tryAgain           {width: 14.8vh;
+                    height: 6vh;
+                    border: 0;
                     margin-top: 3vh;
                     margin-bottom: 3vh;
                     background-image: url(emptyButton.PNG);
                     background-size: cover;
+                    background-color: inherit;
                     background-position: center;
                     z-index: 4;
                     justify-content: center; /* Horizontales Zentrieren */
